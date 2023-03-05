@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Cinzel+Decorative:wght@700&family=Fredericka+the+Great&family=Kalam&family=Lemonada&family=Lobster&family=Oleo+Script&family=Secular+One&family=Staatliches&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4be4eb8aed.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p class="port"> Welcome to My Portfolio Website</p>
+                <h1>Hi, I'm Jay Panchal <br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------About------------------------------------------------------------- -->
+    <div id="about">
+        <div class="container-1">
+            <div class="row">
+                <div class="col-1">
+                    <h1 class="for-h1">About Me</h1>
+                    <p class="for-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste harum blanditiis
+                        pariatur aliquam
+                        perferendis debitis quibusdam saepe porro magnam ut placeat numquam, iure sunt quidem deserunt,
+                        doloribus vero. Illo quae vel dolorum repellendus obcaecati mollitia laborum enim temporibus
+                        placeat velit asperiores</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <img src="images/html-5.png" class="img">
+                        <img src="images/css-3.png" class="img">
+                        <img src="images/java-script.png" class="img">
+                        <img src="images/nodejs.png" class="img">
+                        <img src="images/react.png" class="img">
+                    </div>
+                    <div class="tab-content" id="education">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic in harum quo libero vitae vero
+                            doloribus deleniti corporis quis nostrum asperiores dolore delectus neque sequi possimus
+                            amet consequatur incidunt numquam, accusantium perferendis voluptatum voluptatibus.
+                            Repudiandae pariatur consequatur magni quas voluptates animi amet iste blanditiis, harum
+                            sapiente explicabo numquam. Voluptate, accusamus.</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <img src="images/about.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------SERVICE-------------------------------------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="me-h1">My Service</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quasi impedit quos sit omnis.Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quasi impedit quos sit omnis.Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quasi impedit quos sit omnis.Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- ---------------------------------------Contact----------------------------------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Enter Your Name" required>
+                    <input type="email" name="Email" placeholder="Enter Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+            <div class="contact-left">
+                <h1 class="contact-h1">Contact Me</h1>
+                <p class="contact-p">jp6589819@gmail.com</p>
+                <p class="contact-p">0123456789</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Jay.Created and Upload by Jay</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
